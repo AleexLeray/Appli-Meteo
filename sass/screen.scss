@@ -1,0 +1,82 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+@font-face {
+ font-family: "Avenir";
+ src: url('../font/Avenir-Light.ttf');
+}
+
+body {
+  background-image: linear-gradient(top left, #020065, #dd2287);
+  font-family: "Avenir";
+}
+
+.Appli {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+    .meteo {
+      width: 310px;
+      height: 440px;
+      margin-top: 100px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 3px 5px 3px black;
+        .photo {
+          img {
+            width: 310px;
+            height: 310px;
+            border-radius: 15px 15px 0 0;
+          }
+          p {
+            font-size: 40px;
+            color: #ffffff;
+            margin-top: -300px;
+            text-align: right;
+            margin-right: 10px;
+            font-weight: lighter;
+          }
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 315px;
+            line-height: 35px;
+            font-size: 25px;
+            letter-spacing: 2px;
+          }
+          p{
+            font-weight: lighter;
+          }
+        }
+    }
+}
+
+.soleil {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+    .forme {
+      background-color: #ffffff;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      box-shadow: 2px 4px 2px black;
+      position: relative;
+        bottom:175px;
+          img {
+            width: 85px;
+            height: 85px;
+          }
+    }
+}
